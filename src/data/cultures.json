@@ -1,0 +1,77 @@
+[
+  {
+    "id": "greek",
+    "title": "Mitología Griega",
+    "description": "El fascinante mundo de los dioses del Olimpo y sus historias.",
+    "imageUrl": "/images/mythologyGreece.jpg",
+    "content": "La mitología griega es un conjunto de mitos y leyendas pertenecientes a los antiguos griegos que tratan de sus dioses y héroes, la naturaleza del mundo, los orígenes y el significado de sus propios cultos y prácticas rituales. Formaban parte de la religión en la Antigua Grecia y están estrechamente entrelazados con la vida cotidiana y la cultura de esta civilización.\n\nLos principales dioses olímpicos incluyen a Zeus, rey de los dioses; Hera, su esposa y diosa del matrimonio; Poseidón, dios del mar; Atenea, diosa de la sabiduría; Apolo, dios de la luz, la música y la profecía; Artemisa, diosa de la caza; Afrodita, diosa del amor; Ares, dios de la guerra; Hefesto, dios del fuego y la forja; Hermes, mensajero de los dioses; Dionisio, dios del vino y el éxtasis; y Hades, dios del inframundo.\n\nLa mitología griega ha tenido una influencia profunda en la cultura, las artes y la literatura de la civilización occidental. Muchas de sus historias han sido reinterpretadas en diversas formas artísticas a lo largo de los siglos, desde la literatura hasta el cine moderno. Los conceptos y arquetipos presentes en estos mitos continúan resonando en la psicología, la filosofía y la narrativa contemporáneas.",
+    "myths": [
+      {
+        "id": "prometeo",
+        "title": "El Mito de Prometeo"
+      },
+      {
+        "id": "caja-pandora",
+        "title": "La Caja de Pandora"
+      },
+      {
+        "id": "minotauro",
+        "title": "El Minotauro"
+      }
+    ],
+    "legends": [],
+    "famousCharacters": [
+      "Zeus - Rey de los dioses y dios del cielo",
+      "Atenea - Diosa de la sabiduría y la estrategia",
+      "Poseidón - Dios del mar",
+      "Hades - Dios del inframundo",
+      "Heracles (Hércules) - Héroe divino conocido por sus doce trabajos"
+    ]
+  },
+  {
+    "id": "nordic",
+    "title": "Mitología Nórdica",
+    "description": "Dioses guerreros, gigantes y el destino final en el Ragnarök.",
+    "imageUrl": "/images/mythologyNordic.jpg",
+    "content": "La mitología nórdica comprende las creencias y leyendas de los pueblos escandinavos precristianos, incluyendo aquellos que se asentaron en Islandia, donde la mayoría de las fuentes escritas sobre esta mitología fueron ensambladas. Estas fuentes incluyen la Edda poética y la Edda prosaica, compiladas en el siglo XIII, así como las sagas islandesas.\n\nEl cosmos en la mitología nórdica consiste en Nueve Mundos que rodean un árbol cósmico central, Yggdrasil. Entre estos mundos se encuentran Asgard, hogar de los dioses; Midgard, el mundo de los humanos; y Jotunheim, la tierra de los gigantes. Los dioses pertenecen a dos grupos principales: los Æsir y los Vanir. Los principales dioses Æsir incluyen a Odín, Thor y Loki, mientras que los Vanir incluyen deidades como Njörð, Freyr y Freyja.\n\nUn tema central en la mitología nórdica es el Ragnarök, un evento apocalíptico que marca el fin del mundo, donde muchos dioses importantes morirán en batalla contra varios monstruos y gigantes, y el cosmos será destruido en fuego y sumergido en agua. Después del Ragnarök, el mundo renacerá y será repoblado por dos supervivientes humanos.\n\nLa mitología nórdica ha experimentado un renacimiento en la cultura popular contemporánea, influyendo en obras literarias, películas, videojuegos y otros medios. Sus temas de valentía frente a un destino inevitable y la complejidad moral de sus dioses continúan resonando con audiencias modernas.",
+    "myths": [
+      {
+        "id": "ragnarok",
+        "title": "Ragnarök"
+      }
+    ],
+    "legends": [],
+    "famousCharacters": [
+      "Odín - Dios principal, asociado con la sabiduría, la guerra y la muerte",
+      "Thor - Dios del trueno y protector de la humanidad",
+      "Loki - Dios embaucador conocido por su astucia y engaños",
+      "Freya - Diosa del amor, la belleza y la fertilidad",
+      "Heimdall - Guardián del Bifröst, el puente arcoíris que conecta Asgard con Midgard"
+    ]
+  },
+  {
+    "id": "mesoamerican",
+    "title": "Mitología Mesoamericana",
+    "description": "Los poderosos dioses y las creencias de las civilizaciones precolombinas.",
+    "imageUrl": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746378886/mitos%20y%20leyendas/Gemini_Generated_Image_7dh44d7dh44d7dh4_acf2aw.jpg",
+    "content": "La mitología mesoamericana abarca los sistemas de creencias y narrativas de las civilizaciones precolombinas de Mesoamérica, incluyendo a los mayas, aztecas, olmecas, zapotecas y otras culturas. Estas mitologías son notablemente complejas y diversas, reflejando la rica variedad cultural de la región.\n\nLas mitologías mesoamericanas comparten varios elementos comunes, como la creencia en múltiples creaciones y destrucciones del mundo, la importancia del sacrificio para mantener el orden cósmico, y panteones de dioses asociados con fenómenos naturales y aspectos de la vida humana. El calendario y la astronomía jugaban roles cruciales en estas mitologías, con muchos dioses y rituales vinculados a ciclos celestiales.\n\nEntre los aztecas, deidades importantes incluían a Huitzilopochtli (dios de la guerra y el sol), Quetzalcóatl (la serpiente emplumada, dios de la sabiduría), Tezcatlipoca (dios de la noche y la hechicería), y Tláloc (dios de la lluvia). La mitología maya presentaba dioses como Itzamná (dios creador), Kukulkán (equivalente a Quetzalcóatl), y los Héroes Gemelos del Popol Vuh.\n\nEstas mitologías se preservaron en códices, estelas, relieves y tradiciones orales, aunque muchas fuentes primarias fueron destruidas durante la conquista española. Sin embargo, elementos de estas creencias persisten en las prácticas culturales y religiosas de comunidades indígenas contemporáneas en México y América Central, demostrando la resistencia y adaptabilidad de estas tradiciones mitológicas.",
+    "myths": [
+      {
+        "id": "creacion-maya",
+        "title": "La Creación Maya"
+      },
+      {
+        "id": "quetzalcoatl",
+        "title": "Quetzalcóatl"
+      }
+    ],
+    "legends": [],
+    "famousCharacters": [
+      "Quetzalcóatl - La serpiente emplumada, dios de la sabiduría y creador de la humanidad",
+      "Huitzilopochtli - Dios azteca de la guerra y el sol",
+      "Tláloc - Dios de la lluvia y la fertilidad",
+      "Itzamná - Dios maya creador y del cielo",
+      "Tezcatlipoca - Dios azteca de la noche, la magia y el destino"
+    ]
+  }
+]

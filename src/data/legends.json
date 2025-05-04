@@ -1,0 +1,228 @@
+[
+  {
+    "id": "la-llorona",
+    "title": "La Llorona",
+    "region": "Latinoamérica",
+    "description": "El lamento eterno de una madre que ahogó a sus hijos y ahora vaga cerca de los ríos buscando nuevas víctimas.",
+    "imageUrl": "/images/Outstanding.jpg",
+    "story": [
+      {
+        "type": "text",
+        "value": "En los tiempos en que la luna era confidente de los susurros y las estrellas tejían historias en el manto nocturno, existió en un valle bañado por el río una joven de belleza tan radiante como el sol naciente. Su nombre era María, y su risa era melodía que danzaba con el viento entre los árboles. María amaba la vida y la sentía florecer en cada fibra de su ser. Pero su corazón, como un jardín esperando la primavera, anhelaba un amor que lo hiciera florecer por completo."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746368341/mitos%20y%20leyendas/Gemini_Generated_Image_81mh0b81mh0b81mh_w58w0s.jpg"
+      },
+      {
+        "type": "text",
+        "value": "Y así fue como conoció a un hombre apuesto y de porte elegante, un forastero que llegó al pueblo como el viento trae las semillas de tierras lejanas.Él la cortejó con palabras dulces como la miel y promesas brillantes como las luciérnagas en la noche. María, con la inocencia de una flor que se abre al sol, entregó su corazón sin reservas. De ese amor nacieron dos hermosos niños, pequeños soles que iluminaron su mundo. Pero el corazón del hombre era como arena entre los dedos, incapaz de sostener la promesa de un amor eterno. Poco a poco, su afecto se enfrió, sus visitas se hicieron esporádicas, hasta que un día desapareció del valle, llevándose consigo las ilusiones de María como el río se lleva las hojas secas en otoño."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746368354/mitos%20y%20leyendas/Gemini_Generated_Image_81mh0c81mh0c81mh_ijg4e9.jpg"
+      },
+      {
+        "type": "text",
+        "value": "La joven madre sintió que el mundo se desmoronaba a su alrededor. Sus hijos eran ahora el único lazo que la unía a la vida, pero también un constante recordatorio de la traición y el abandono. En su desesperación, su mente se nubló, y la angustia se retorció en su pecho como una serpiente venenosa. En una noche oscura, con el alma hecha pedazos y el juicio perdido en el laberinto del dolor, María llevó a sus hijos al río que una vez fue testigo de su felicidad. En un acto de locura y desesperación, los entregó a las aguas, buscando quizás un alivio a su tormento, un escape de la realidad que la quemaba por dentro."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746367022/mitos%20y%20leyendas/llorona3_aemwvk.jpg"
+      },
+      {
+        "type": "text",
+        "value": "Pero la paz que buscaba nunca llegó. Al darse cuenta de la magnitud de su terrible acto, el remordimiento la golpeó con la fuerza de un rayo. El río, que antes era fuente de vida, se convirtió en el espejo de su horror. Desde ese momento, María quedó atrapada en un limbo entre la vida y la muerte, condenada a vagar eternamente por las orillas, buscando a sus hijos perdidos. Su llanto se convirtió en un lamento desgarrador que se mezcla con el murmullo del agua, un grito de dolor que estremece los corazones de quienes lo escuchan en la oscuridad de la noche. Ya no era la joven radiante de antaño, sino una sombra vestida de blanco, con el rostro cubierto de lágrimas invisibles, conocida desde entonces como La Llorona."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746366976/mitos%20y%20leyendas/llorona1_xe8kgk.jpg"
+      },
+      {
+        "type": "text",
+        "value": "Su historia nos recuerda la fragilidad del corazón humano, cómo el amor puede transformarse en dolor y la desesperación puede conducir a actos impensables. La Llorona no es solo un espectro que asusta a los niños; es el eco de una tragedia humana, la manifestación del sufrimiento de una madre y el peso eterno de una pérdida irreparable. Su leyenda perdura, contada en voz baja junto a las fogatas, como una advertencia y un recordatorio de que incluso el amor más hermoso puede quebrarse, dejando tras de sí solo lágrimas y lamentos en la oscuridad."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746367036/mitos%20y%20leyendas/llorona4_uszhem.jpg"
+      }
+    ],
+    "culture": "Cultura Latinoamericana",
+    "categoryKeys": [2]
+  },
+  {
+    "id": "chupacabras",
+    "title": "El Chupacabras",
+    "region": "Puerto Rico/México",
+    "description": "Criatura que ataca al ganado y les extrae toda la sangre, causando pánico en zonas rurales.",
+    "imageUrl": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746380173/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_nplx2inplx2inplx_egkieu.jpg",
+    "story": [
+      {
+        "type": "text",
+        "value": "En los rincones más oscuros del campo, donde la bruma se arrastra entre árboles secos y el silencio pesa como un secreto antiguo, se cuenta la historia de una criatura que no pertenece ni al mundo de los hombres ni al de los animales. Una sombra que camina en las noches sin luna, sigilosa como un suspiro… el Chupacabras. Nadie sabe con certeza de dónde vino. Algunos dicen que nació en lo profundo de la selva, donde los humanos rara vez pisan. Otros aseguran que es el resultado de un experimento fallido, escapado de un laboratorio oculto en lo alto de las montañas. Pero todos coinciden en una cosa: no deja rastro más que muerte y miedo. La primera vez que lo vieron fue en Puerto Rico, una noche calurosa de 1995. Los granjeros encontraron a sus cabras muertas, sin una sola gota de sangre en el cuerpo. Sin huellas, sin señales de lucha. Solo dos pequeños orificios en el cuello, como si algo les hubiera succionado la vida."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746380181/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_fm3jolfm3jolfm3j_t6vuvd.jpg"
+      },
+      {
+        "type": "text",
+        "value": "Pronto, los relatos se multiplicaron. En México, en Chile, en Texas... en cada rincón donde había ganado muerto, aparecía el mismo susurro: “fue el Chupacabras”. Los testigos que afirman haberlo visto lo describen como una criatura pequeña, encorvada, con ojos rojos como brasas y espinas que recorren su espalda. Algunos lo comparan con un reptil, otros con un perro sin pelo. Todos lo sienten más que lo ven, como si la propia noche se encogiera con su presencia."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746380178/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_lfep0blfep0blfep_vhyhjg.jpg"
+      },
+      {
+        "type": "text",
+        "value": "Se mueve rápido, y nunca ataca a los humanos… o al menos no todavía. Se alimenta de la sangre de animales, en especial de cabras, como su nombre indica. Aparece y desaparece sin explicación, como si supiera que forma parte de algo más grande que nuestra comprensión.Los científicos lo niegan. Dicen que son coyotes enfermos, murciélagos, o simples histerias colectivas. Pero los campesinos no dudan. Han visto sus ojos en la oscuridad. Han escuchado los balidos desesperados de los animales minutos antes de morir. Y han sentido ese escalofrío que solo se conoce cuando algo verdaderamente desconocido se acerca. Porque el Chupacabras no es solo un mito. Es una advertencia. Un recordatorio de que aún quedan cosas allá afuera que no entendemos… y que es mejor no buscar."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746380173/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_nplx2inplx2inplx_egkieu.jpg"
+      }
+    ],
+    "culture": "Cultura Caribeña y Mexicana",
+    "categoryKeys": [2]
+  },
+  {
+    "id": "dama-blanca",
+    "title": "La Dama de Blanco",
+    "region": "Europa/Latinoamérica",
+    "description": "Aparición fantasmal de una mujer vestida de blanco que se presenta en carreteras solitarias.",
+    "imageUrl": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746381034/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_flnpebflnpebflnp_ukvahw.jpg",
+    "story": [
+      {
+        "type": "text",
+        "value": "En las noches calladas, cuando el viento apenas roza los árboles y la niebla cubre los caminos como un sudario, algunos aseguran haberla visto. De pie junto a una carretera desierta, o a la orilla de un río, una figura solitaria vestida de blanco… inmóvil, casi etérea. Nadie necesita que le digan su nombre, porque todos la conocen: la Dama de Blanco."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746380958/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_idsf4yidsf4yidsf_ewq98t.jpg"
+      },
+      {
+        "type": "text",
+        "value": "Su historia ha viajado de boca en boca durante generaciones, y aunque cambia de lugar en cada versión, siempre guarda la misma tristeza. Se dice que fue una mujer joven y hermosa, de corazón puro, que vivía enamorada de un hombre que no merecía su amor. Él la traicionó, la abandonó o, en algunas versiones más crueles, la llevó a la ruina. Desesperada por la vergüenza, la locura o la pérdida, la mujer se arrojó a un río, o se perdió en el bosque, sin jamás regresar. Pero su alma no encontró descanso."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746381034/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_flnpebflnpebflnp_ukvahw.jpg"
+      },
+      {
+        "type": "text",
+        "value": "Desde entonces, aparece vestida con un largo vestido blanco, a veces de novia, a veces simplemente de luto. Su rostro, pálido y sin lágrimas, busca algo que nunca podrá recuperar. Algunos dicen que vaga en busca de sus hijos perdidos. Otros, que aún espera el regreso de su amante. Y hay quienes aseguran que no busca a nadie… que solo repite eternamente la última noche de su vida. Quienes la han encontrado cuentan que no camina, flota. Que su presencia enfría el aire, y que su mirada es tan triste que puede romperte el corazón. Si un viajero se detiene a ayudarla, ella sube al auto en silencio, se sienta en el asiento trasero, y desaparece al pasar por el lugar donde murió. A veces, lanza un grito desgarrador. Otras veces, simplemente se esfuma. La gente dice que es un alma condenada, atrapada entre este mundo y el otro. Y aunque pocos se atreven a pronunciar su nombre en voz alta, todos saben que si ves a una mujer de blanco en medio de la noche, lo mejor es no mirar atrás… y seguir conduciendo."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746380953/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_vdeq5avdeq5avdeq_bv1gvp.jpg"
+      }
+    ],
+    "culture": "Cultura Europea y Latinoamericana",
+    "categoryKeys": [2]
+  },
+  {
+    "id": "patasola",
+    "title": "La Patasola",
+    "region": "Colombia",
+    "description": "La Patasola es una criatura mitológica de la tradición colombiana, que se caracteriza por tener una sola pierna y ser muy seductora. Según la leyenda, puede atraer a los hombres hacia la muerte o la perdición.",
+    "imageUrl": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746381766/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_ot9gclot9gclot9g_ei4qgt.jpg",
+    "story": [
+      {
+        "type": "text",
+        "value": "En lo profundo de las selvas sudamericanas, donde la vegetación es tan espesa que apenas deja pasar la luz, y los sonidos del monte parecen susurrar secretos antiguos, vive un espíritu que espanta a todo aquel que se atreve a profanar la tierra. La llaman la Patasola, y pocos regresan ilesos después de cruzarse en su camino. Los leñadores y cazadores que han oído hablar de ella saben que no es bueno andar solo por el bosque, especialmente de noche. Se dice que La Patasola se aparece primero como una mujer bellísima, de ojos oscuros y cabello largo, que pide ayuda o compañía. Puede parecer herida, o simplemente perdida, con voz dulce y mirada triste. Pero es un engaño."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746381766/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_ot9gclot9gclot9g_ei4qgt.jpg"
+      },
+      {
+        "type": "text",
+        "value": "Porque cuando el incauto se acerca, la ilusión se rompe: su rostro se deforma, su voz se convierte en un chillido agudo, y donde debería tener piernas, solo hay una. Una sola pierna retorcida, ensangrentada y poderosa, con la que salta y corre más rápido que cualquier hombre."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746381762/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_m4csjsm4csjsm4cs_wtkrfx.jpg"
+      },
+      {
+        "type": "text",
+        "value": "Nadie sabe a ciencia cierta cómo nació su maldición. Algunos dicen que fue una mujer infiel, condenada por los celos y la traición. Otros, que fue víctima de una brutal venganza, y que su espíritu furioso no halló descanso. También hay quienes creen que es una protectora de la selva, un ser que castiga a los hombres que dañan la naturaleza, que cazan por placer o que traspasan los límites sagrados del monte. Lo cierto es que su lamento aún se escucha entre los árboles, y que si un hombre oye una voz femenina en lo más hondo del bosque, lo mejor que puede hacer es no contestar. Porque La Patasola huele el miedo, y una vez que ha elegido a su presa, no se detiene"
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746381758/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_pz29ufpz29ufpz29_lmciyf.jpg"
+      }
+    ],
+    "culture": "Cultura Colombiana",
+    "categoryKeys": [2]
+  },
+  {
+    "id": "madremonte",
+    "title": "La Madre Monte",
+    "region": "Colombia",
+    "description": "La Madremonte es un espíritu mítico de la selva, representado como una mujer enorme y salvaje, cubierta de hojas, musgo y raíces, con ojos verdes brillantes y fuerza sobrenatural.",
+    "imageUrl": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746382543/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_og4rwdog4rwdog4r_snskhp.jpg",
+    "story": [
+      {
+        "type": "text",
+        "value": "En las profundidades de las montañas, donde los árboles son tan altos que parecen tocar el cielo y el aire huele a tierra mojada, habita un ser ancestral, tan antiguo como la selva misma. No pertenece al mundo de los vivos ni al de los muertos, sino al corazón salvaje de la naturaleza. Se le conoce como La Madremonte, aunque los lugareños la llaman con temor y respeto: La Vieja. Dicen que su presencia se siente antes de verla. El canto de los pájaros se detiene, el viento cambia de rumbo, y una espesa neblina desciende sobre los caminos. En medio de ese silencio espeso, se oye el crujir de ramas, lento y pesado, como si algo inmenso se acercara. Y entonces, aparece ella."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746382554/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_ts0b4mts0b4mts0b_mepjbs.jpg"
+      },
+      {
+        "type": "text",
+        "value": "Alta, corpulenta, cubierta de musgo, hojas y raíces, como si fuera parte del mismo monte. Su rostro suele estar oculto por una gran capa de plantas enmarañadas o por una corona de ramas secas. Sus ojos, cuando se revelan, son verdes como el agua estancada y brillan con la furia del bosque herido. De su cuerpo emana un olor húmedo, vegetal y fuerte, como el de los pantanos. Se mueve con lentitud, pero cuando se enfurece, la selva entera parece temblar con ella. La Madremonte es la protectora de la selva, de los ríos, los animales y las montañas. Su espíritu habita en todo lo vivo, y castiga con dureza a quien daña la naturaleza. Los campesinos que talan sin permiso, los cazadores que matan por codicia, los forasteros que ensucian los ríos o violan la tierra sagrada... todos ellos tarde o temprano sienten su castigo. Se pierden en la niebla, escuchan voces que los confunden, caminan en círculos sin poder escapar, hasta que la locura o el miedo los consume. Y a veces, simplemente desaparecen."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746382549/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_i48pjfi48pjfi48p_psxxhv.jpg"
+      },
+      {
+        "type": "text",
+        "value": "Pero La Madremonte también castiga a los infieles y a los mentirosos. Se dice que cuando un hombre engaña a su mujer y se adentra en el bosque para encontrarse con su amante, ella lo espera en el sendero. Le sale al paso envuelta en vapor, le habla con voz ronca, le muestra sus dientes podridos, y lo persigue hasta hacerlo caer de rodillas.No todos los encuentros con La Madremonte son mortales. Algunos pocos, si muestran respeto, pueden escapar. Hay quienes aseguran haberle ofrecido ofrendas: agua limpia, flores silvestres, semillas. Y a cambio, ella los dejó en paz. Incluso hay quienes creen que La Madremonte no es una amenaza, sino una madre encolerizada, una diosa olvidada que solo busca proteger lo que queda de su mundo. Las abuelas dicen que, si entras al monte, debes hacerlo con cuidado. No maldigas, no cortes lo que no vas a usar, no caces por gusto. Porque en lo profundo del bosque, La Vieja está despierta, y no perdona a los que no respetan la vida que guarda."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746382541/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_1hm4d61hm4d61hm4_z815tv.jpg"
+      }
+    ],
+    "culture": "Cultura Chilota",
+    "categoryKeys": [2]
+  },
+  {
+    "id": "el-pajaro-macua",
+    "title": "El Pájaro Macuá",
+    "region": "Colombia",
+    "description": "Según la leyenda, es el alma de una mujer vanidosa y cruel, condenada a vagar eternamente convertida en pájaro como castigo por romper corazones y causar muertes por desamor.",
+    "imageUrl": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746383076/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_49x99l49x99l49x9_jm4d2d.jpg",
+    "story": [
+      {
+        "type": "text",
+        "value": "En las noches de luna débil, cuando el viento acaricia los árboles con un murmullo que parece un lamento, algunos aseguran escuchar un canto triste, repetitivo, como un “pío… pío…” que viene desde lo más profundo del monte o se pierde entre los cafetales. No es un ave común. Quienes lo han oído saben que ese sonido no pertenece a ningún pájaro conocido. Es el pájaro Macuá, y su canto no es otra cosa que una confesión eterna. La leyenda cuenta que hace mucho tiempo vivía una mujer joven, hermosa y deseada por muchos. Pero su corazón estaba lleno de orgullo, y no conocía la compasión. Tenía varios pretendientes, y jugaba cruelmente con ellos, prometiendo amor que luego negaba con frialdad. Uno de esos hombres, humillado y desesperado, acabó quitándose la vida. La tragedia se extendió por el pueblo como fuego, pero la joven no mostró ni lágrimas ni arrepentimiento."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746383087/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_340l4n340l4n340l_wim9lg.jpg"
+      },
+      {
+        "type": "text",
+        "value": "Con el tiempo, otro hombre cayó víctima de su vanidad. Y otro. La gente comenzó a evitarla, temiendo su belleza como si fuera una maldición. Y entonces, una noche, la joven desapareció. Algunos dicen que fue maldecida por el alma de aquel que más la amó. Otros, que los espíritus del bosque, testigos de su crueldad, la convirtieron en lo que más temía: un ser olvidado, condenado a vagar por los montes sin rostro ni forma humana. Su cuerpo se transformó en un ave pequeña, de plumaje oscuro, pero su alma no cambió. Su voz, antes dulce y burlona, se volvió un canto de arrepentimiento que repite eternamente: “pío… pío…”, como si dijera “perdón… perdón…”."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746383082/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_7ltdre7ltdre7ltd_yr4eme.jpg"
+      },
+      {
+        "type": "text",
+        "value": "Desde entonces, el pájaro Macuá aparece por las noches en los caminos solitarios, cerca de casas donde alguien ha muerto de amor, o donde habita la culpa. Su canto es tan triste que, quienes lo escuchan, sienten un escalofrío recorrerles la espalda. Se dice que si oyes su canto muy cerca, debes rezar. Porque puede significar que alguien cercano cargará con una pena profunda, o que la muerte ronda la zona. Y así, el Macuá sigue volando, invisible para la mayoría, cantando en la oscuridad no por gusto, sino por castigo. Una advertencia viva de lo que ocurre cuando el amor se convierte en burla y el corazón se endurece hasta volverse piedra."
+      },
+      {
+        "type": "image",
+        "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746383079/mitos%20y%20leyendas/leyendas/Gemini_Generated_Image_eda364eda364eda3_r5t6ls.jpg"
+      }
+    ],
+    "culture": "Cultura Mexicana",
+    "categoryKeys": [2]
+  }
+]
