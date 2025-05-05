@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white py-12 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h3 className="text-xl font-bold mb-4">Mitos y Leyendas</h3>
           <p className="text-slate-300">
@@ -69,13 +69,58 @@ export default function Footer() {
                 Nórdica
               </Link>
             </li>
-
             <li>
               <Link
                 href="/cultures/mesoamerican"
                 className="text-slate-300 hover:text-amber-400 transition-colors"
               >
                 Mesoamericana
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-lg font-bold mb-4">Enlaces</h4>
+          <ul className="space-y-2">
+            <li>
+              <Link
+                href="/contact"
+                className="text-slate-300 hover:text-amber-400 transition-colors"
+              >
+                Contacto
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/privacy-policy"
+                className="text-slate-300 hover:text-amber-400 transition-colors"
+              >
+                Política de Privacidad
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/terms-and-conditions"
+                className="text-slate-300 hover:text-amber-400 transition-colors"
+              >
+                Términos y Condiciones
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/cookie-policy"
+                className="text-slate-300 hover:text-amber-400 transition-colors"
+              >
+                Política de Cookies
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/advertising-notice"
+                className="text-slate-300 hover:text-amber-400 transition-colors"
+              >
+                Aviso de Publicidad
               </Link>
             </li>
           </ul>
