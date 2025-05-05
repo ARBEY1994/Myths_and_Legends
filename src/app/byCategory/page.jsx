@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,7 +19,8 @@ const getCategoryName = (categoryId) => {
   return categories[categoryId] || "Categoría Desconocida";
 };
 
-export default function CategoryPage() {
+// Componente interno que usa useSearchParams
+function CategoryContent() {
   const searchParams = useSearchParams();
   const categoryId = searchParams.get("id");
   const [items, setItems] = useState([]);
@@ -120,5 +121,19 @@ export default function CategoryPage() {
         )}
       </main>
     </div>
+  );
+}
+
+// Componente de carga para Suspense
+function CategoryLoading() {
+  return <LoadingPage message="Cargando categoría..." variant="mythical" />;
+}
+
+// Componente principal que envuelve con Suspense
+export default function CategoryPage() {
+  return (
+    <Suspense fallback={<CategoryLoading />}>
+      <CategoryContent />
+    </Suspense>
   );
 }

@@ -2,43 +2,36 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import React, { useEffect } from "react";
 import myths from "@/data/myths.json";
 
-// Definimos los tipos para nuestros mitos
 type StoryItem = {
-  type: string;  // 'text' o 'image'
+  type: string;
   value: string;
 };
 
-// Define la interfaz para las props de la página
-interface MythPageProps {
-  params: { id: string };
-}
+export default function MythPage() {
+  const params = useParams();
+  const id = params.id as string;
 
-export default function MythPage({ params }: MythPageProps) {
-  // Obtener el id directamente de params
-  const id = params.id;
-  
-  // Obtener el mito directamente del JSON
   const myth = myths.find((m) => m.id === id);
-  
-  // Actualizar el título y la descripción de la página
+
   useEffect(() => {
     if (myth) {
       document.title = `${myth.title} | Mitos y Leyendas`;
-      
-      // Actualizar meta descripción
-      const metaDescription = document.querySelector('meta[name="description"]');
+
+      const metaDescription = document.querySelector(
+        'meta[name="description"]'
+      );
       if (metaDescription) {
-        metaDescription.setAttribute('content', myth.description);
+        metaDescription.setAttribute("content", myth.description);
       }
     } else {
       document.title = "Mito no encontrado | Mitos y Leyendas";
     }
   }, [myth]);
 
-  // Si no encontramos el mito, mostramos un mensaje de error
   if (!myth) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-amber-50 dark:bg-slate-800">
@@ -111,8 +104,13 @@ export default function MythPage({ params }: MythPageProps) {
           {/* La historia ilustrada se muestra con texto e imágenes intercaladas */}
           <div className="max-w-none">
             {myth.story.map((item: StoryItem, index: number) => (
-              <div key={index} className={`mb-8 ${index % 2 === 0 ? 'fade-in-left' : 'fade-in-right'}`}>
-                {item.type === 'text' ? (
+              <div
+                key={index}
+                className={`mb-8 ${
+                  index % 2 === 0 ? "fade-in-left" : "fade-in-right"
+                }`}
+              >
+                {item.type === "text" ? (
                   <div className="bg-amber-50/70 dark:bg-slate-700/70 p-6 rounded-lg shadow-sm border-l-4 border-amber-500 dark:border-amber-400">
                     <p className="text-slate-700 dark:text-slate-200 text-lg leading-relaxed">
                       {item.value}
