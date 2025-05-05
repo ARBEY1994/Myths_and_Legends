@@ -11,8 +11,12 @@ type StoryItem = {
   value: string;
 };
 
+// Define la interfaz para las props de la página
+interface LegendPageProps {
+  params: { id: string };
+}
 
-export default function LegendPage({ params }: { params: { id: string } }) {
+export default function LegendPage({ params }: LegendPageProps) {
   // Obtener el id directamente de params
   const id = params.id;
   

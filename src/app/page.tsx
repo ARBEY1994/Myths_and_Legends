@@ -12,20 +12,16 @@ export default function Home() {
       {/* Hero Section */}
       <Header />
 
-
       {/* Main Content */}
       <main className="flex-grow">
         {/* Featured Categories Section */}
         <Categories />
-
 
         {/* Featured Cultures Section */}
         <MythologicalCultures />
 
         {/* Featured Article */}
         <FeaturedArticle />
-
-
       </main>
       {/* Footer */}
       <Footer />

@@ -11,8 +11,12 @@ type StoryItem = {
   value: string;
 };
 
+// Define la interfaz para las props de la página
+interface MythPageProps {
+  params: { id: string };
+}
 
-export default function MythPage({ params }: { params: { id: string } }) {
+export default function MythPage({ params }: MythPageProps) {
   // Obtener el id directamente de params
   const id = params.id;
   
