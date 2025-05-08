@@ -48,7 +48,8 @@
       }
     ],
     "culture": "Cultura Latinoamericana",
-    "categoryKeys": [2]
+    "categoryKeys": [2],
+    "key": "legend"
   },
   {
     "id": "chupacabras",
@@ -83,7 +84,8 @@
       }
     ],
     "culture": "Cultura Caribeña y Mexicana",
-    "categoryKeys": [2]
+    "categoryKeys": [2],
+    "key": "legend"
   },
   {
     "id": "dama-blanca",
@@ -118,7 +120,8 @@
       }
     ],
     "culture": "Cultura Europea y Latinoamericana",
-    "categoryKeys": [2]
+    "categoryKeys": [2],
+    "key": "legend"
   },
   {
     "id": "patasola",
@@ -153,7 +156,8 @@
       }
     ],
     "culture": "Cultura Colombiana",
-    "categoryKeys": [2]
+    "categoryKeys": [2],
+    "key": "legend"
   },
   {
     "id": "madremonte",
@@ -188,7 +192,8 @@
       }
     ],
     "culture": "Cultura Chilota",
-    "categoryKeys": [2]
+    "categoryKeys": [2],
+    "key": "legend"
   },
   {
     "id": "el-pajaro-macua",
@@ -223,6 +228,7 @@
       }
     ],
     "culture": "Cultura Mexicana",
-    "categoryKeys": [2]
+    "categoryKeys": [2],
+    "key": "legend"
   }
 ]

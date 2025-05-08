@@ -21,13 +21,13 @@ export default function Header() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Link
-            href="/myths"
+            href="/mitos"
             className="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300"
           >
             Explorar Mitos
           </Link>
           <Link
-            href="/legends"
+            href="/leyendas"
             className="bg-transparent hover:bg-white/10 border-2 border-white text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300"
           >
             Descubrir Leyendas

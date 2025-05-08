@@ -1,6 +1,6 @@
 [
   {
-    "id": "greek",
+    "id": "griega",
     "title": "Mitología Griega",
     "description": "El fascinante mundo de los dioses del Olimpo y sus historias.",
     "imageUrl": "/images/mythologyGreece.jpg",
@@ -26,10 +26,11 @@
       "Poseidón - Dios del mar",
       "Hades - Dios del inframundo",
       "Heracles (Hércules) - Héroe divino conocido por sus doce trabajos"
-    ]
+    ],
+    "key": "culture"
   },
   {
-    "id": "nordic",
+    "id": "nordica",
     "title": "Mitología Nórdica",
     "description": "Dioses guerreros, gigantes y el destino final en el Ragnarök.",
     "imageUrl": "/images/mythologyNordic.jpg",
@@ -47,10 +48,11 @@
       "Loki - Dios embaucador conocido por su astucia y engaños",
       "Freya - Diosa del amor, la belleza y la fertilidad",
       "Heimdall - Guardián del Bifröst, el puente arcoíris que conecta Asgard con Midgard"
-    ]
+    ],
+    "key": "culture"
   },
   {
-    "id": "mesoamerican",
+    "id": "mesoamericana",
     "title": "Mitología Mesoamericana",
     "description": "Los poderosos dioses y las creencias de las civilizaciones precolombinas.",
     "imageUrl": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746378886/mitos%20y%20leyendas/Gemini_Generated_Image_7dh44d7dh44d7dh4_acf2aw.jpg",
@@ -72,6 +74,7 @@
       "Tláloc - Dios de la lluvia y la fertilidad",
       "Itzamná - Dios maya creador y del cielo",
       "Tezcatlipoca - Dios azteca de la noche, la magia y el destino"
-    ]
+    ],
+    "key": "culture"
   }
 ]

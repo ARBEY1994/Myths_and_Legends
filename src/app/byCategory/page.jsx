@@ -107,7 +107,12 @@ function CategoryContent() {
                     {item.culture || item.region}
                   </p>
                   <Link
-                    href={`/${item.content ? "myths" : "legends"}/${item.id}`}
+                    href={`/${
+                      {
+                        myth: "mitos",
+                        legend: "leyendas"
+                      }[item.key] || ""
+                    }/${item.id}`}
                     className="text-amber-600 hover:text-amber-800 dark:hover:text-amber-400 font-medium inline-flex items-center"
                   >
                     Leer más <span className="ml-1">→</span>

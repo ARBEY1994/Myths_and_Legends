@@ -74,7 +74,7 @@ export default function LegendPage() {
     <div className="min-h-screen bg-white dark:bg-slate-800">
       <div className="container mx-auto max-w-4xl px-4 py-8">
         <Link
-          href="/legends"
+          href="/leyendas"
           className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 mb-6"
         >
           <svg

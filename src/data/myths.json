@@ -39,7 +39,8 @@
         "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746370885/mitos%20y%20leyendas/Gemini_Generated_Image_og88u3og88u3og88_k4q7mc.jpg"
       }
     ],
-    "categoryKeys": [1, 4]
+    "categoryKeys": [1, 4],
+    "key": "myth"
   },
   {
     "id": "ragnarok",
@@ -78,7 +79,8 @@
         "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746373201/mitos%20y%20leyendas/Gemini_Generated_Image_nm9cdjnm9cdjnm9c_vvxli3.jpg"
       }
     ],
-    "categoryKeys": [1, 4]
+    "categoryKeys": [1, 4],
+    "key": "myth"
   },
   {
     "id": "creacion-maya",
@@ -136,7 +138,8 @@
         "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746373811/mitos%20y%20leyendas/Gemini_Generated_Image_c5nbflc5nbflc5nb_s1wnsd.jpg"
       }
     ],
-    "categoryKeys": [1, 4]
+    "categoryKeys": [1, 4],
+    "key": "myth"
   },
   {
     "id": "caja-pandora",
@@ -170,7 +173,8 @@
         "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746377253/mitos%20y%20leyendas/Gemini_Generated_Image_ma13egma13egma13_snt5tn.jpg"
       }
     ],
-    "categoryKeys": [4]
+    "categoryKeys": [4],
+    "key": "myth"
   },
   {
     "id": "minotauro",
@@ -205,7 +209,8 @@
         "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746378450/mitos%20y%20leyendas/Gemini_Generated_Image_64jrkq64jrkq64jr_groeei.jpg"
       }
     ],
-    "categoryKeys": [2, 3]
+    "categoryKeys": [2, 3],
+    "key": "myth"
   },
   {
     "id": "quetzalcoatl",
@@ -247,6 +252,7 @@
         "value": "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1746379074/mitos%20y%20leyendas/Gemini_Generated_Image_ck7t67ck7t67ck7t_vhe7qp.jpg"
       }
     ],
-    "categoryKeys": [1, 4]
+    "categoryKeys": [1, 4],
+    "key": "myth"
   }
 ]

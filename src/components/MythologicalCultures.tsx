@@ -50,21 +50,21 @@ export default function MythologicalCultures() {
       description:
         "El fascinante mundo de los dioses del Olimpo y sus historias.",
       imageUrl: "/images/mythologyGreece.jpg",
-      linkUrl: "/cultures/greek",
+      linkUrl: "/culturas/griega",
     },
     {
       title: "Mitología Nórdica",
       description:
         "Dioses guerreros, gigantes y el destino final en el Ragnarök.",
       imageUrl: "/images/mythologyNordic.jpg",
-      linkUrl: "/cultures/nordic",
+      linkUrl: "/culturas/nordica",
     },
     {
       title: "Mitología Mesoamericana",
       description:
         "Los poderosos dioses y las creencias de las civilizaciones precolombinas.",
       imageUrl: "/images/mythologyMesoamerican.jpg",
-      linkUrl: "/cultures/mesoamerican",
+      linkUrl: "/culturas/mesoamericana",
     },
   ];
 
