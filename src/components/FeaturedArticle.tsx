@@ -35,14 +35,14 @@ export default function FeaturedArticle() {
                 Desde entonces, su alma en pena vaga por las orillas de ríos y
                 lagos en noches de niebla, vestida de blanco y con el rostro
                 oculto tras una cascada de cabello negro. Los ancianos de mi
-                pueblo juran haber escuchado su lamento desgarrador &ldquo;¡Aaaay, mis
-                hiiijos!&rdquo; resonando en la oscuridad...
+                pueblo juran haber escuchado su lamento desgarrador
+                &ldquo;¡Aaaay, mis hiiijos!&rdquo; resonando en la oscuridad...
               </p>
             </div>
           </div>
 
           <Link
-            href="/legends/la-llorona"
+            href="/leyendas/la-llorona"
             className="inline-block bg-amber-600 hover:bg-amber-700 text-white py-2 px-6 rounded-lg transition-colors btn-primary"
             aria-label="Descubre la historia completa de La Llorona y sus variantes en Latinoamérica"
           >

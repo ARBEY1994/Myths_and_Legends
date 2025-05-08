@@ -75,7 +75,7 @@ export default function MythsPage() {
                       {myth.description}
                     </p>
                     <Link
-                      href={`/myths/${myth.id}`}
+                      href={`/mitos/${myth.id}`}
                       className="inline-block bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-lg transition-colors"
                     >
                       Leer mito completo

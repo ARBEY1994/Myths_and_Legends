@@ -75,7 +75,7 @@ export default function LegendsPage() {
                       {legend.description}
                     </p>
                     <Link
-                      href={`/legends/${legend.id}`}
+                      href={`/leyendas/${legend.id}`}
                       className="inline-block bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-lg transition-colors"
                     >
                       Leer leyenda completa
