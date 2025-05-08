@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import React, { useEffect } from "react";
 import legends from "@/data/legends.json";
+import Footer from "@/components/Footer";
 
 type StoryItem = {
   type: string;
@@ -138,6 +139,7 @@ export default function LegendPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

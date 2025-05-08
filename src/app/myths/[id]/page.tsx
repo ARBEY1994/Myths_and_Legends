@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import React, { useEffect } from "react";
 import myths from "@/data/myths.json";
+import Footer from "@/components/Footer";
 
 type StoryItem = {
   type: string;
@@ -137,6 +138,7 @@ export default function MythPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

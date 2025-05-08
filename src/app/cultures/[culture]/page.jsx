@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import LoadingPage from "../../../components/LoadingPage";
 
@@ -19,13 +18,15 @@ export default function CulturaPage() {
       setLoading(true);
       try {
         // Importar directamente el archivo JSON de culturas
-        const cultures = await import("@/data/cultures.json").then(module => module.default);
-        const data = cultures.find(culture => culture.id === culturaId);
-        
+        const cultures = await import("@/data/cultures.json").then(
+          (module) => module.default
+        );
+        const data = cultures.find((culture) => culture.id === culturaId);
+
         if (!data) {
           throw new Error("No se pudo encontrar la información de la cultura");
         }
-        
+
         setCultura(data);
       } catch (error) {
         console.error("Error al cargar los datos:", error);
@@ -40,7 +41,12 @@ export default function CulturaPage() {
   }, [culturaId]);
 
   if (loading) {
-    return <LoadingPage message="Cargando cultura mitológica..." variant="mythical" />;
+    return (
+      <LoadingPage
+        message="Cargando cultura mitológica..."
+        variant="mythical"
+      />
+    );
   }
 
   if (!cultura) {
@@ -135,6 +141,7 @@ export default function CulturaPage() {
           </Link>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

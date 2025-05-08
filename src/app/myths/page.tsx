@@ -5,6 +5,7 @@ import Link from "next/link";
 import BackToHome from "../../components/BackToHome";
 import { useEffect } from "react";
 import myths from "@/data/myths.json";
+import Footer from "@/components/Footer";
 
 export default function MythsPage() {
   // Actualizar el título y la descripción de la página
@@ -86,6 +87,7 @@ export default function MythsPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
