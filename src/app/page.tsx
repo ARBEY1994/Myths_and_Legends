@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Categories from "../components/Categories";
 import MythologicalCultures from "../components/MythologicalCultures";
 import FeaturedArticle from "../components/FeaturedArticle";
+import GamesSection from "../components/GamesSection";
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
 
         {/* Featured Cultures Section */}
         <MythologicalCultures />
+
+        {/* Games Section */}
+        <GamesSection />
 
         {/* Featured Article */}
         <FeaturedArticle />
