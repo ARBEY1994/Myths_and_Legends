@@ -88,30 +88,32 @@ export default function FindTheDifferences() {
 
       // Mostrar las coordenadas en la consola con el tipo de dispositivo
       console.log(
-        `[${deviceType}] Coordenada para la diferencia: { x: ${x.toFixed(1)}, y: ${y.toFixed(
+        `[${deviceType}] Coordenada para la diferencia: { x: ${x.toFixed(
           1
-        )}, radius: 5, found: false }`
+        )}, y: ${y.toFixed(1)}, radius: 5, found: false }`
       );
-      
+
       // Mostrar un mensaje en pantalla con las coordenadas
-      const coordInfo = document.createElement('div');
-      coordInfo.style.position = 'fixed';
-      coordInfo.style.top = '10px';
-      coordInfo.style.left = '10px';
-      coordInfo.style.backgroundColor = 'rgba(0,0,0,0.8)';
-      coordInfo.style.color = 'white';
-      coordInfo.style.padding = '10px';
-      coordInfo.style.borderRadius = '5px';
-      coordInfo.style.zIndex = '9999';
-      coordInfo.style.maxWidth = '300px';
-      coordInfo.innerHTML = `<strong>${deviceType}</strong><br>x: ${x.toFixed(1)}, y: ${y.toFixed(1)}`;
+      const coordInfo = document.createElement("div");
+      coordInfo.style.position = "fixed";
+      coordInfo.style.top = "10px";
+      coordInfo.style.left = "10px";
+      coordInfo.style.backgroundColor = "rgba(0,0,0,0.8)";
+      coordInfo.style.color = "white";
+      coordInfo.style.padding = "10px";
+      coordInfo.style.borderRadius = "5px";
+      coordInfo.style.zIndex = "9999";
+      coordInfo.style.maxWidth = "300px";
+      coordInfo.innerHTML = `<strong>${deviceType}</strong><br>x: ${x.toFixed(
+        1
+      )}, y: ${y.toFixed(1)}`;
       document.body.appendChild(coordInfo);
-      
+
       // Eliminar el mensaje después de 3 segundos
       setTimeout(() => {
         document.body.removeChild(coordInfo);
       }, 3000);
-      
+
       return;
     }
 
@@ -151,11 +153,11 @@ export default function FindTheDifferences() {
       // Incrementar contador de intentos fallidos
       const newFailedAttempts = failedAttempts + 1;
       setFailedAttempts(newFailedAttempts);
-      
+
       // Mostrar mensaje de intento fallido
       setShowFailedMessage(true);
       setTimeout(() => setShowFailedMessage(false), 1500);
-      
+
       // Si llega a 5 intentos fallidos, reiniciar el juego
       if (newFailedAttempts >= 5) {
         // Mostrar mensaje de reinicio
@@ -199,7 +201,7 @@ export default function FindTheDifferences() {
   };
 
   return (
-    <section className="py-12 px-4 bg-gradient-to-b from-amber-100 to-amber-50 dark:from-slate-800 dark:to-slate-900">
+    <section className="py-12  bg-gradient-to-b from-amber-100 to-amber-50 dark:from-slate-800 dark:to-slate-900">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-8">
           <p className="text-xl text-amber-700 dark:text-amber-300 mb-4">
@@ -240,11 +242,11 @@ export default function FindTheDifferences() {
           </AnimatePresence>
         </div>
 
-        <div className="bg-white dark:bg-slate-700 p-6 rounded-xl shadow-xl">
-          <div className="flex flex-col md:flex-row gap-6">
-            <div className="md:w-1/2 relative">
+        <div className="bg-white dark:bg-slate-700 py-3 sm:p-6 rounded-xl shadow-xl w-full">
+          <div className="flex flex-col md:flex-row gap-6 w-full">
+            <div className="w-full md:w-1/2 relative">
               <motion.div
-                className="relative w-full h-96 md:h-[500px] overflow-hidden rounded-lg border-4 border-amber-200 dark:border-slate-600"
+                className="relative w-full h-[50vh] sm:h-[60vh] md:h-[500px] overflow-hidden rounded-lg border-4 border-amber-200 dark:border-slate-600"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3 }}
@@ -253,7 +255,7 @@ export default function FindTheDifferences() {
                   src={currentLevel.originalImage}
                   alt="Imagen original"
                   fill
-                  className="object-cover"
+                  className="object-cover sm:object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority
                   unoptimized={currentLevel.originalImage.startsWith("http")}
@@ -264,9 +266,9 @@ export default function FindTheDifferences() {
               </p>
             </div>
 
-            <div className="md:w-1/2 relative">
+            <div className="w-full md:w-1/2 relative">
               <motion.div
-                className="relative w-full h-96 md:h-[500px] cursor-crosshair overflow-hidden rounded-lg border-4 border-amber-200 dark:border-slate-600"
+                className="relative w-full h-[50vh] sm:h-[60vh] md:h-[500px] cursor-crosshair overflow-hidden rounded-lg border-4 border-amber-200 dark:border-slate-600"
                 onClick={handleImageClick}
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -276,7 +278,7 @@ export default function FindTheDifferences() {
                   src={currentLevel.modifiedImage}
                   alt="Imagen con diferencias"
                   fill
-                  className="object-cover"
+                  className="object-cover sm:object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority
                   unoptimized={currentLevel.modifiedImage.startsWith("http")}
@@ -323,7 +325,7 @@ export default function FindTheDifferences() {
                         </motion.div>
                       )
                   )}
-                  
+
                   {/* Mensaje de intento fallido */}
                   {showFailedMessage && (
                     <motion.div
@@ -334,12 +336,14 @@ export default function FindTheDifferences() {
                       transition={{ duration: 0.3 }}
                     >
                       {failedAttempts >= 5 ? (
-                        '¡Demasiados intentos fallidos!\nReiniciando nivel...'
+                        "¡Demasiados intentos fallidos!\nReiniciando nivel..."
                       ) : (
                         <>
-                          ¡Intento fallido!<br />
+                          ¡Intento fallido!
+                          <br />
                           <span className="text-sm font-normal">
-                            Te quedan {5 - failedAttempts} {5 - failedAttempts === 1 ? 'intento' : 'intentos'}
+                            Te quedan {5 - failedAttempts}{" "}
+                            {5 - failedAttempts === 1 ? "intento" : "intentos"}
                           </span>
                         </>
                       )}
