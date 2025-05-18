@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { GAME_LEVELS } from "@/data/gameLevels";
 
 interface SuccessModalProps {
-  showCongrats: boolean;
   showSuccess: boolean;
   currentLevelId: string;
   onNextLevel: () => void;
@@ -13,14 +12,13 @@ interface SuccessModalProps {
 }
 
 export default function SuccessModal({
-  showCongrats,
   showSuccess,
   currentLevelId,
   onNextLevel,
   onResetLevel,
   onClose,
 }: SuccessModalProps) {
-  if (!showSuccess && !showCongrats) return null;
+  if (!showSuccess) return null;
 
   return (
     <motion.div
@@ -37,12 +35,10 @@ export default function SuccessModal({
         transition={{ type: "spring", damping: 20, stiffness: 300 }}
       >
         <h3 className="text-2xl font-bold text-green-600 dark:text-green-400 mb-4 text-center">
-          {showCongrats ? "¡Felicidades! 🎉" : "¡Nivel Completado!"}
+          ¡Felicidades! 🎉
         </h3>
         <p className="mb-6 text-slate-700 dark:text-slate-300 text-center">
-          {showCongrats
-            ? "Has encontrado todas las diferencias. ¡Eres muy atento a los detalles!"
-            : "Has encontrado todas las diferencias en este nivel."}
+          Has encontrado todas las diferencias. ¡Eres muy atento a los detalles!
         </p>
         <div className="flex flex-col space-y-3">
           <button

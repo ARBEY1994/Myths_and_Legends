@@ -5,6 +5,7 @@ export interface GameLevel {
   modifiedImage: string;
   differences: Difference[];
   description: string;
+  timeLimit?: number; // Tiempo en segundos para completar el nivel
 }
 
 export interface Difference {

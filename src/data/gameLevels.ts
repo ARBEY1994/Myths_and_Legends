@@ -12,10 +12,11 @@ export const GAME_LEVELS: GameLevel[] = [
     differences: [
       { x: 50.8, y: 79.2, radius: 10, found: false },
       { x: 17.4, y: 37.2, radius: 12, found: false },
-      { x: 26.1, y: 95.8, radius: 8, found: false },
       { x: 47.1, y: 68.6, radius: 10, found: false },
       { x: 39.7, y: 26.8, radius: 12, found: false },
+      { x: 25.8, y: 95.2, radius: 5, found: false },
     ],
+    timeLimit: 45,
   },
   {
     id: "level2",
@@ -26,10 +27,11 @@ export const GAME_LEVELS: GameLevel[] = [
     modifiedImage:
       "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1747456932/mitos%20y%20leyendas/games/encuentra_la_diferencia/1_atwguj.png",
     differences: [
-      { x: 18.4, y: 61.4, radius: 5, found: false },
-      { x: 48.9, y: 28.6, radius: 5, found: false },
-      { x: 62.0, y: 93.2, radius: 5, found: false },
+      { x: 18.4, y: 61.4, radius: 8, found: false },
+      { x: 48.9, y: 28.6, radius: 8, found: false },
+      { x: 62.0, y: 93.2, radius: 8, found: false },
     ],
+    timeLimit: 30,
   },
   {
     id: "level3",
@@ -44,6 +46,7 @@ export const GAME_LEVELS: GameLevel[] = [
       { x: 83.0, y: 55.6, radius: 5, found: false },
       { x: 4.0, y: 57.8, radius: 5, found: false },
     ],
+    timeLimit: 35,
   },
   {
     id: "level4",
@@ -54,11 +57,12 @@ export const GAME_LEVELS: GameLevel[] = [
     modifiedImage:
       "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1747456314/mitos%20y%20leyendas/games/encuentra_la_diferencia/1_s6ebua.png",
     differences: [
-      { x: 27.8, y: 36.4, radius: 5, found: false },
-      { x: 24.2, y: 96.6, radius: 5, found: false },
-      { x: 90.6, y: 75.4, radius: 5, found: false },
-      { x: 84.2, y: 88.2, radius: 5, found: false },
+      { x: 27.8, y: 36.4, radius: 8, found: false },
+      { x: 24.2, y: 96.6, radius: 8, found: false },
+      { x: 90.6, y: 75.4, radius: 8, found: false },
+      { x: 84.2, y: 88.2, radius: 8, found: false },
     ],
+    timeLimit: 100,
   },
   {
     id: "level5",
@@ -75,5 +79,6 @@ export const GAME_LEVELS: GameLevel[] = [
       { x: 54.6, y: 61.8, radius: 5, found: false },
       { x: 93.6, y: 78.6, radius: 5, found: false },
     ],
+    timeLimit: 100,
   },
 ];
