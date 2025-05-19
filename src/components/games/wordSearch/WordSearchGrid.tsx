@@ -75,6 +75,8 @@ export default function WordSearchGrid({
   useEffect(() => {
     const handleTouchMove = (e: TouchEvent) => {
       if (isDragging && e.touches.length > 0) {
+        e.preventDefault();
+
         const touch = e.touches[0];
         const element = document.elementFromPoint(touch.clientX, touch.clientY);
 
@@ -93,7 +95,8 @@ export default function WordSearchGrid({
       setIsDragging(false);
     };
 
-    document.addEventListener("touchmove", handleTouchMove);
+    // Usar la opción { passive: false } para permitir llamar a preventDefault()
+    document.addEventListener("touchmove", handleTouchMove, { passive: false });
     document.addEventListener("touchend", handleTouchEnd);
 
     return () => {
@@ -103,7 +106,11 @@ export default function WordSearchGrid({
   }, [isDragging, onCellDrag]);
 
   return (
-    <div className="grid grid-cols-10 gap-1 md:gap-2 max-w-lg mx-auto">
+    <div
+      className="grid grid-cols-10 gap-1 md:gap-2 max-w-lg mx-auto"
+      // Prevenir el comportamiento de scroll en toda la cuadrícula
+      onTouchMove={(e) => isDragging && e.preventDefault()}
+    >
       {grid.map((row, rowIndex) =>
         row.map((letter, colIndex) => {
           const isInCurrentSelection = isCellInCurrentSelection(
@@ -148,8 +155,10 @@ export default function WordSearchGrid({
                 }
               }}
               onMouseUp={() => setIsDragging(false)}
-              onTouchStart={() => {
+              onTouchStart={(e) => {
                 if (!gameOver) {
+                  // Prevenir el comportamiento predeterminado al iniciar el toque
+                  e.preventDefault();
                   onCellClick(rowIndex, colIndex);
                   setIsDragging(true);
                 }
