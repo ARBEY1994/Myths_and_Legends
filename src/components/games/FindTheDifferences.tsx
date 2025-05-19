@@ -2,13 +2,11 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { GameLevel, Difference } from "@/types/games";
 import { GAME_LEVELS } from "@/data/gameLevels";
 import SuccessModal from "./SuccessModal";
 import LevelSelector from "./LevelSelector";
-import GameControls from "./GameControls";
 
 export default function FindTheDifferences() {
   const [currentLevel, setCurrentLevel] = useState<GameLevel>(GAME_LEVELS[0]);
@@ -102,6 +100,8 @@ export default function FindTheDifferences() {
   };
 
   // Función para cambiar el tiempo personalizado (solo en código)
+  // Esta función está comentada porque no se usa actualmente, pero podría ser útil en el futuro
+  /*
   const handleTimeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newTime = parseInt(e.target.value);
     if (!isNaN(newTime) && newTime > 0) {
@@ -109,6 +109,7 @@ export default function FindTheDifferences() {
       setTimeLeft(newTime);
     }
   };
+  */
 
   // Función para calcular las coordenadas relativas a la imagen real, no al contenedor
   const calculateImageCoordinates = (
