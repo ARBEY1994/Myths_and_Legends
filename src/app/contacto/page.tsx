@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import Footer from "../../components/Footer";
@@ -17,6 +18,7 @@ const EMAILJS_TEMPLATE_ID = "template_au3mzhi";
 const EMAILJS_PUBLIC_KEY = "7uE2Y8Rk3YgN5XzBc";
 
 export default function Contact() {
+  const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState("");
@@ -113,6 +115,30 @@ export default function Contact() {
                 </svg>
                 www.mitosyleyendas.com
               </p>
+              
+              <div className="mt-6">
+                <button
+                  onClick={() => router.push('/')}
+                  className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-lg transition-colors shadow-md"
+                  aria-label="Volver a la página principal"
+                >
+                  <svg 
+                    className="w-5 h-5" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24" 
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M10 19l-7-7m0 0l7-7m-7 7h18" 
+                    />
+                  </svg>
+                  <span>Volver al inicio</span>
+                </button>
+              </div>
             </div>
           </div>
 

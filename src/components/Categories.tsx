@@ -47,7 +47,7 @@ export default function Categories() {
       description:
         "Conoce a las poderosas entidades que gobiernan los panteones mitológicos.",
       imageUrl: "/images/creationImage.jpeg",
-      linkUrl: "/byCategory?id=1",
+      linkUrl: "/categoria?id=1",
     },
     {
       key: 2,
@@ -55,7 +55,7 @@ export default function Categories() {
       description:
         "Descubre seres fantásticos que habitan en las leyendas de todo el mundo.",
       imageUrl: "/images/falconImage.jpg",
-      linkUrl: "/byCategory?id=2",
+      linkUrl: "/categoria?id=2",
     },
     {
       key: 3,
@@ -63,7 +63,7 @@ export default function Categories() {
       description:
         "Conoce las hazañas de los grandes protagonistas de las historias míticas.",
       imageUrl: "/images/heroes.jpg",
-      linkUrl: "/byCategory?id=3",
+      linkUrl: "/categoria?id=3",
     },
     {
       key: 4,
@@ -71,7 +71,7 @@ export default function Categories() {
       description:
         "Explora las historias que explican la creación del mundo y sus fenómenos.",
       imageUrl: "/images/origin.jpg",
-      linkUrl: "/byCategory?id=4",
+      linkUrl: "/categoria?id=4",
     },
   ];
 

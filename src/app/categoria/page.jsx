@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
@@ -20,6 +20,7 @@ const getCategoryName = (categoryId) => {
 // Componente interno que usa useSearchParams
 function CategoryContent() {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const categoryId = searchParams.get("id");
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -62,12 +63,12 @@ function CategoryContent() {
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-amber-50 to-amber-100 dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-white">
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="mb-8">
-          <Link
-            href="/"
+          <button
+            onClick={() => router.push('/')}
             className="text-amber-600 hover:text-amber-800 dark:hover:text-amber-400 font-medium inline-flex items-center"
           >
             ← Volver al inicio
-          </Link>
+          </button>
         </div>
 
         <h1 className="text-4xl font-bold mb-8 text-center">{categoryName}</h1>

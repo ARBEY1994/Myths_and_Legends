@@ -1,10 +1,16 @@
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export default function BackToHome() {
+  const router = useRouter();
+  
+  const handleClick = () => {
+    router.push('/');
+  };
+  
   return (
     <div className="py-4 px-6">
-      <Link 
-        href="/" 
+      <button 
+        onClick={handleClick}
         className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-lg transition-colors shadow-md"
         aria-label="Volver a la página principal"
       >
@@ -23,7 +29,7 @@ export default function BackToHome() {
           />
         </svg>
         <span>Inicio</span>
-      </Link>
+      </button>
     </div>
   );
 }

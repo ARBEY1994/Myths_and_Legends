@@ -17,7 +17,7 @@ export default function Footer() {
           <ul className="space-y-2">
             <li>
               <Link
-                href="/myths"
+                href="/mitos"
                 className="text-slate-300 hover:text-amber-400 transition-colors"
               >
                 Mitos
@@ -25,7 +25,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/legends"
+                href="/leyendas"
                 className="text-slate-300 hover:text-amber-400 transition-colors"
               >
                 Leyendas
@@ -33,7 +33,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/byCategory?id=2"
+                href="/categoria?id=2"
                 className="text-slate-300 hover:text-amber-400 transition-colors"
               >
                 Criaturas Míticas
@@ -41,7 +41,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/byCategory?id=1"
+                href="/categoria?id=1"
                 className="text-slate-300 hover:text-amber-400 transition-colors"
               >
                 Dioses y Deidades
@@ -55,7 +55,7 @@ export default function Footer() {
           <ul className="space-y-2">
             <li>
               <Link
-                href="/cultures/greek"
+                href="/culturas/griega"
                 className="text-slate-300 hover:text-amber-400 transition-colors"
               >
                 Griega
@@ -63,7 +63,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/cultures/nordic"
+                href="/culturas/nordica"
                 className="text-slate-300 hover:text-amber-400 transition-colors"
               >
                 Nórdica
@@ -71,7 +71,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/cultures/mesoamerican"
+                href="/culturas/mesoamericana"
                 className="text-slate-300 hover:text-amber-400 transition-colors"
               >
                 Mesoamericana
@@ -85,7 +85,7 @@ export default function Footer() {
           <ul className="space-y-2">
             <li>
               <Link
-                href="/contact"
+                href="/contacto"
                 className="text-slate-300 hover:text-amber-400 transition-colors"
               >
                 Contacto
@@ -93,7 +93,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/privacy-policy"
+                href="/politica-privacidad"
                 className="text-slate-300 hover:text-amber-400 transition-colors"
               >
                 Política de Privacidad
@@ -101,7 +101,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/terms-and-conditions"
+                href="/terminos-y-condiciones"
                 className="text-slate-300 hover:text-amber-400 transition-colors"
               >
                 Términos y Condiciones
@@ -109,7 +109,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/cookie-policy"
+                href="/politica-cookies"
                 className="text-slate-300 hover:text-amber-400 transition-colors"
               >
                 Política de Cookies
@@ -117,7 +117,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/advertising-notice"
+                href="/aviso-publicidad"
                 className="text-slate-300 hover:text-amber-400 transition-colors"
               >
                 Aviso de Publicidad
