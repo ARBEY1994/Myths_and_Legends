@@ -56,13 +56,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        {/* Google AdSense - Colocado en el head para mejor rastreo */}
-        <Script
-          id="adsbygoogle-init"
-          strategy="beforeInteractive"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4362473683303679"
-          crossOrigin="anonymous"
-        />
+     
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${spectral.variable} antialiased`}
