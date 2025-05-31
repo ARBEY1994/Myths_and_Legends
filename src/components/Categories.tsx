@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 type CategoryProps = {
   title: string;
@@ -15,24 +16,28 @@ const CategoryCard = ({
   linkUrl,
 }: CategoryProps) => {
   return (
-    <div className="bg-amber-50 dark:bg-slate-700 rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105">
-      <div className="relative h-48 w-full">
+    <div className="group h-full flex flex-col bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-amber-100/50 dark:border-slate-700/50">
+      <div className="relative h-48 w-full overflow-hidden">
         <Image
           src={imageUrl}
           alt={title}
           fill
-          className="object-cover"
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-2">{title}</h3>
-        <p className="text-slate-600 dark:text-slate-300 mb-4">{description}</p>
+      <div className="p-6 flex-1 flex flex-col">
+        <h3 className="text-xl font-bold mb-3 text-amber-700 dark:text-amber-400">{title}</h3>
+        <p className="text-slate-600 dark:text-slate-300 mb-4 flex-1">{description}</p>
         <Link
           href={linkUrl}
-          className="text-amber-600 hover:text-amber-800 dark:hover:text-amber-400 font-medium inline-flex items-center"
+          className="inline-flex items-center text-amber-600 hover:text-amber-700 dark:text-amber-400 dark:hover:text-amber-300 font-medium transition-colors duration-200 group/link"
         >
-          Explorar <span className="ml-1">→</span>
+          Explorar categoría
+          <span className="ml-2 group-hover/link:translate-x-1 transition-transform duration-200">
+            →
+          </span>
         </Link>
       </div>
     </div>
@@ -75,24 +80,65 @@ export default function Categories() {
     },
   ];
 
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.2
+      }
+    }
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { 
+      opacity: 1, 
+      y: 0, 
+      transition: { 
+        duration: 0.5, 
+        ease: [0.16, 1, 0.3, 1] 
+      } 
+    },
+    hover: {
+      y: -5,
+      transition: { duration: 0.2 }
+    }
+  };
+
   return (
-    <section className="py-16 px-4 bg-white dark:bg-slate-800">
+    <motion.section 
+      className="py-16 px-4"
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.1 }}
+      variants={container}
+    >
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center">
+        <h2 className="text-3xl font-bold mb-12 text-center text-amber-800 dark:text-amber-400">
           Explora por Categorías
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <motion.div 
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          variants={container}
+        >
           {categories.map((category, index) => (
-            <CategoryCard
+            <motion.div
               key={index}
-              title={category.title}
-              description={category.description}
-              imageUrl={category.imageUrl}
-              linkUrl={category.linkUrl}
-            />
+              variants={item}
+              whileHover="hover"
+            >
+              <CategoryCard
+                title={category.title}
+                description={category.description}
+                imageUrl={category.imageUrl}
+                linkUrl={category.linkUrl}
+              />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }

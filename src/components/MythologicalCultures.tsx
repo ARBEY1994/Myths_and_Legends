@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 type CultureProps = {
   title: string;
@@ -68,10 +69,39 @@ export default function MythologicalCultures() {
     },
   ];
 
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3
+      }
+    }
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 30 },
+    show: { 
+      opacity: 1, 
+      y: 0, 
+      transition: { 
+        duration: 0.6, 
+        ease: [0.16, 1, 0.3, 1] 
+      } 
+    }
+  };
+
   return (
-    <section className="py-16 px-4 bg-amber-50 dark:bg-slate-900">
+    <motion.section 
+      className="py-16 px-4"
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.1 }}
+      variants={container}
+    >
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-4 text-center">
+        <h2 className="text-3xl font-bold mb-4 text-center text-amber-800 dark:text-amber-400">
           Culturas Mitológicas
         </h2>
         <p className="text-center max-w-3xl mx-auto mb-12 text-slate-600 dark:text-slate-300">
@@ -79,18 +109,27 @@ export default function MythologicalCultures() {
           explicar el mundo que les rodea.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          variants={container}
+        >
           {cultures.map((culture, index) => (
-            <CultureCard
+            <motion.div
               key={index}
-              title={culture.title}
-              description={culture.description}
-              imageUrl={culture.imageUrl}
-              linkUrl={culture.linkUrl}
-            />
+              className="bg-white/80 dark:bg-slate-800/80 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 backdrop-blur-sm border border-amber-100/50 dark:border-slate-700/50"
+              variants={item}
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+            >
+              <CultureCard
+                title={culture.title}
+                description={culture.description}
+                imageUrl={culture.imageUrl}
+                linkUrl={culture.linkUrl}
+              />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }

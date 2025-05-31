@@ -1,9 +1,50 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { FaGamepad, FaPuzzlePiece, FaDice } from "react-icons/fa";
+import { FaShieldHalved } from "react-icons/fa6";
 
 export default function GamesSection() {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3
+      }
+    }
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { 
+      opacity: 1, 
+      y: 0, 
+      transition: { 
+        duration: 0.6, 
+        ease: [0.16, 1, 0.3, 1] 
+      } 
+    },
+    hover: {
+      y: -5,
+      boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+      transition: { 
+        duration: 0.3,
+        ease: "easeOut"
+      }
+    }
+  };
+
+ 
+
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-amber-50 to-amber-100 dark:from-slate-900 dark:to-slate-800">
+    <motion.section 
+      className="py-16 px-4"
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.1 }}
+      variants={container}
+    >
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-amber-800 dark:text-amber-400">
@@ -13,6 +54,8 @@ export default function GamesSection() {
             Pon a prueba tu conocimiento y habilidades con nuestros juegos interactivos inspirados en las historias más fascinantes de la mitología y el folclore.
           </p>
         </div>
+        
+        
         
         <div className="max-w-3xl mx-auto bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden">
           <div className="p-8 text-center">
@@ -34,6 +77,6 @@ export default function GamesSection() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

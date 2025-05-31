@@ -3,6 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white py-12 px-4 md:px-8">
+       <div className="max-w-7xl mx-auto mt-12 pt-6 border-t border-slate-700 text-center text-slate-400"></div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h3 className="text-xl font-bold mb-4">Mitos y Leyendas</h3>
