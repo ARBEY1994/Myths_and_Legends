@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FaGamepad, FaPuzzlePiece, FaDice } from "react-icons/fa";
-import { FaShieldHalved } from "react-icons/fa6";
+
 
 export default function GamesSection() {
   const container = {
@@ -15,25 +14,7 @@ export default function GamesSection() {
     }
   };
 
-  const item = {
-    hidden: { opacity: 0, y: 20 },
-    show: { 
-      opacity: 1, 
-      y: 0, 
-      transition: { 
-        duration: 0.6, 
-        ease: [0.16, 1, 0.3, 1] 
-      } 
-    },
-    hover: {
-      y: -5,
-      boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-      transition: { 
-        duration: 0.3,
-        ease: "easeOut"
-      }
-    }
-  };
+  
 
  
 
