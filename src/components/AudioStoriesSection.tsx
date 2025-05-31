@@ -4,15 +4,8 @@ import { useState, useRef, useEffect } from 'react';
 import { FaPlay, FaPause, FaVolumeUp, FaVolumeMute } from "react-icons/fa";
 import { FaBookOpen } from "react-icons/fa";
 import { motion } from "framer-motion";
-
-interface AudioStory {
-  id: number;
-  title: string;
-  description: string;
-  audioUrl: string;
-  imageUrl: string;
-  duration: string;
-}
+import Image from "next/image";
+import { AudioStory, audioStories } from "@/data/audioStories";
 
 const AudioStoriesSection = () => {
   const [currentStory, setCurrentStory] = useState<AudioStory | null>(null);
@@ -22,17 +15,7 @@ const AudioStoriesSection = () => {
   const [currentStoryIndex, setCurrentStoryIndex] = useState<number | null>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  const stories: AudioStory[] = [
-    {
-      id: 1,
-      title: "El Misterio del Triángulo de las Bermudas",
-      description: "Explora los enigmas y teorías detrás de la zona más misteriosa del océano, donde barcos y aviones han desaparecido sin dejar rastro.",
-      audioUrl: "/audio/triangulo-bermudas.mp3",
-      imageUrl: "https://res.cloudinary.com/dwwdj1lkw/image/upload/v1748718028/mitos%20y%20leyendas/AudioHistorias/trianguloImagen_q3m3os.png",
-      duration: "03:55"
-    },
-   
-  ];
+  const stories: AudioStory[] = audioStories;
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -44,38 +27,82 @@ const AudioStoriesSection = () => {
       }
     };
 
-    audio.addEventListener('timeupdate', updateProgress);
-    audio.addEventListener('ended', () => {
+    const handleEnded = () => {
       setIsPlaying(false);
       setProgress(0);
-    });
+    };
 
+    // Configuramos los event listeners
+    audio.addEventListener('timeupdate', updateProgress);
+    audio.addEventListener('ended', handleEnded);
+
+    // Limpieza
     return () => {
       audio.removeEventListener('timeupdate', updateProgress);
-      audio.removeEventListener('ended', () => setIsPlaying(false));
+      audio.removeEventListener('ended', handleEnded);
     };
+  }, []);
+
+  // Efecto para manejar cambios en la historia actual
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio || !currentStory) return;
+
+    // Configuramos la fuente del audio cuando cambia la historia
+    audio.src = currentStory.audioUrl;
+    
+    // Opcional: precargar el audio
+    audio.load();
   }, [currentStory]);
 
-  const handleStoryPlay = (story: AudioStory, index: number) => {
-    if (currentStory?.id !== story.id) {
-      setCurrentStory(story);
-      setCurrentStoryIndex(index);
-      setIsPlaying(true);
-      // Reset progress when changing story
-      setProgress(0);
-    } else {
-      setIsPlaying(!isPlaying);
+  const handleStoryPlay = async (story: AudioStory, index: number) => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    try {
+      if (currentStory?.id !== story.id) {
+        // Si es una historia diferente, actualizamos el estado
+        setCurrentStory(story);
+        setCurrentStoryIndex(index);
+        setProgress(0);
+        
+        // Esperamos al siguiente ciclo de renderizado para asegurar que el audio se actualice
+        await new Promise(resolve => setTimeout(resolve, 0));
+        
+        // Configuramos el nuevo audio
+        audio.pause();
+        audio.currentTime = 0;
+        audio.src = story.audioUrl;
+        await audio.play();
+        setIsPlaying(true);
+      } else {
+        // Si es la misma historia, alternamos entre pausa y reproducción
+        if (isPlaying) {
+          audio.pause();
+        } else {
+          await audio.play();
+        }
+        setIsPlaying(!isPlaying);
+      }
+    } catch (error) {
+      console.error("Error al reproducir el audio:", error);
+      setIsPlaying(false);
     }
   };
 
-  const handleMainPlayPause = () => {
-    if (audioRef.current) {
+  const handleMainPlayPause = async () => {
+    const audio = audioRef.current;
+    if (!audio || !currentStory) return;
+
+    try {
       if (isPlaying) {
-        audioRef.current.pause();
+        audio.pause();
       } else {
-        audioRef.current.play().catch(e => console.error("Error playing audio:", e));
+        await audio.play();
       }
       setIsPlaying(!isPlaying);
+    } catch (error) {
+      console.error("Error al controlar la reproducción:", error);
     }
   };
 
@@ -124,7 +151,7 @@ const AudioStoriesSection = () => {
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-amber-800 dark:text-amber-400">
           <FaBookOpen className="inline-block mr-3" />
-          Narraciones de Audio
+          Historias en Audio
         </h2>
         
         <motion.div 
@@ -141,10 +168,13 @@ const AudioStoriesSection = () => {
               whileHover="hover"
             >
               <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={story.imageUrl} 
+                <Image
+                  src={story.imageUrl}
                   alt={story.title}
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover rounded-lg"
+                  priority={index < 3} // Prioriza la carga de las primeras imágenes
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-4 text-white">
