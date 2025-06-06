@@ -56,7 +56,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-     
+        <meta name="monetag" content="3995c38b0dc82aad28bda4222e184035" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${spectral.variable} antialiased`}
