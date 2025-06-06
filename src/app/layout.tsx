@@ -72,6 +72,14 @@ export default function RootLayout({
             gtag('config', 'G-J7LRZF5KD0');
           `}
         </Script>
+        
+        {/* Multitag / Loud tag */}
+        <Script 
+          src="https://fpyf8.com/88/tag.min.js" 
+          data-zone="151077" 
+          strategy="afterInteractive"
+          data-cfasync="false"
+        />
       </body>
     </html>
   );
